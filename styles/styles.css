@@ -63,7 +63,8 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.banner-img img{
+
+.banner-img img {
     width: 100%;
 }
 
@@ -81,7 +82,82 @@ body {
     font-weight: 600;
 
 }
+
 /* Available Sites: */
+.available-sites-container {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 30px;
+    border-top: 1px solid rgba(211, 211, 211, 0.5);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+}
+
+/* Popular Collections Styles */
+.popular-collections-container {
+    margin: 100px auto;
+}
+
+.popular-collections-container .cards {
+    margin: 10px auto;
+}
+
+.collections-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    justify-items: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    width: 320px;
+    height: 450px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.product-name {
+    color: rgb(24, 25, 31);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.price {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rating {
+    color: rgb(251, 130, 0);
+}
+
+.product-description {
+    color: rgb(120, 120, 133);
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
 
 
 
@@ -96,15 +172,32 @@ body {
     .nav-links-container {
         flex-direction: column;
     }
+
     .banner-container {
         flex-direction: column-reverse;
         background-image: none;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
-    .btn-container{
+
+    .btn-container {
         text-align: center;
+    }
+
+    .available-sites-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .card {
+        width: 300px;
+        height: 420px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
     }
 
 }
@@ -114,8 +207,18 @@ body {
     .nav {
         flex-direction: column;
     }
+
     .banner-container {
         flex-direction: column-reverse;
         background-image: none;
+    }
+
+    .available-sites-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
